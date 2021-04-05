@@ -1,19 +1,20 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
+import Hero from '../components/Hero/Hero'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Villa Ensenada Honda | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>Villa Ensenada Honda</h1>
-        <p>Culebra, Puerto Rico</p>
+        <Hero/>
       </main>
 
-    </div>
+    </Layout>
   )
 }
