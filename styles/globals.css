@@ -1,9 +1,31 @@
+:root {
+  --body-color: #eef5f6;
+}
 /* These styles will all be purged */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* These styles will be purged */
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--body-color);
+  }
+}
 @layer components {
   /* My styles */
+  .jumbotron {
+    position: relative;
+    overflow-y: hidden;
+  }
+  .jumbotron > div:first-child {
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .hero__content {
+    position: relative;
+  }
 }
