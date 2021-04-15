@@ -10,7 +10,6 @@
 @layer base {
   body {
     font-family: "Poppins", sans-serif;
-    background-color: var(--body-color);
   }
 }
 @layer components {
@@ -27,5 +26,13 @@
   }
   .hero__content {
     position: relative;
+  }
+  .mobile__menu ul li a {
+    display: block;
+    padding: 16px 0;
+  }
+  .custom__divider {
+    height: 1px;
+    opacity: 0.2;
   }
 }
