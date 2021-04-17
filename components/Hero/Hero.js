@@ -7,9 +7,9 @@ const Hero = () => {
         className="hero__image"
         src="/images/flamenco-beach-hero.jpg"
         alt="Flamenco Beach"
-        width={1440}
-        height={836}
-        layout="responsive"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
       />
       <div className="container mx-auto py-72 px-28 hero__content">
         <div className="flex flex-col justify-center">
